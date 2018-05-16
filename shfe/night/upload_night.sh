@@ -19,8 +19,8 @@ function upload_files
 ###############
 	# 910019
 	scp -P 44163 ./lib/packaged/*.so	u910019@101.231.3.117:/home/u910019/trade/night_910019/x-shfe/
-	scp -P 44163 ./lib/packaged/*.txt	u910019@101.231.3.117:/home/u910019/trade/night_910019/x-shfe/
-	scp -P 44163 ./lib/packaged/*.txt	u910019@101.231.3.117:/home/u910019/trade/night_910019/x-shfe/tools/
+	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/trade/night_910019/x-shfe/
+	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/trade/night_910019/x-shfe/tools/
 	scp -P 44163 ./19/*.csv			u910019@101.231.3.117:/home/u910019/trade/night_910019/x-shfe/
 	scp -P 44163 ./19/*.csv			u910019@101.231.3.117:/home/u910019/trade/night_910019/x-shfe/tools/
 	ssh -p 44163						u910019@101.231.3.117 'rm /home/u910019/trade/night_910019/x-shfe/tools/*.log'
@@ -30,8 +30,8 @@ function upload_files
 
 	# 910063
 	scp -P 44163 ./lib/packaged/*.so	u910019@101.231.3.117:/home/u910019/trade/night_910063/x-shfe/
-	scp -P 44163 ./lib/packaged/*.txt	u910019@101.231.3.117:/home/u910019/trade/night_910063/x-shfe/
-	scp -P 44163 ./lib/packaged/*.txt	u910019@101.231.3.117:/home/u910019/trade/night_910063/x-shfe/tools/
+	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/trade/night_910063/x-shfe/
+	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/trade/night_910063/x-shfe/tools/
 	scp -P 44163 ./63/*.csv			u910019@101.231.3.117:/home/u910019/trade/night_910063/x-shfe/
 	scp -P 44163 ./63/*.csv			u910019@101.231.3.117:/home/u910019/trade/night_910063/x-shfe/tools/
 	ssh -p 44163						u910019@101.231.3.117 'rm /home/u910019/trade/night_910063/x-shfe/tools/*.log'
@@ -41,8 +41,8 @@ function upload_files
 
 	# 910109
 	scp -P 44163 ./lib/packaged/*.so	u910019@101.231.3.117:/home/u910019/trade/night109/x-shfe/
-	scp -P 44163 ./lib/packaged/*.txt	u910019@101.231.3.117:/home/u910019/trade/night109/x-shfe/
-	scp -P 44163 ./lib/packaged/*.txt	u910019@101.231.3.117:/home/u910019/trade/night109/x-shfe/tools/
+	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/trade/night109/x-shfe/
+	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/trade/night109/x-shfe/tools/
 	scp -P 44163 ./109/*.csv			u910019@101.231.3.117:/home/u910019/trade/night109/x-shfe/
 	scp -P 44163 ./109/*.csv			u910019@101.231.3.117:/home/u910019/trade/night109/x-shfe/tools/
 	ssh -p 44163						u910019@101.231.3.117 'rm /home/u910019/trade/night109/x-shfe/tools/*.log'
@@ -52,8 +52,8 @@ function upload_files
 
 	# 910056
 	scp -P 44163 ./lib/packaged/*.so	u910019@101.231.3.117:/home/u910019/trade/night056/x-shfe/
-	scp -P 44163 ./lib/packaged/*.txt	u910019@101.231.3.117:/home/u910019/trade/night056/x-shfe/
-	scp -P 44163 ./lib/packaged/*.txt	u910019@101.231.3.117:/home/u910019/trade/night056/x-shfe/tools/
+	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/trade/night056/x-shfe/
+	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/trade/night056/x-shfe/tools/
 	scp -P 44163 ./056/*.csv			u910019@101.231.3.117:/home/u910019/trade/night056/x-shfe/
 	scp -P 44163 ./056/*.csv			u910019@101.231.3.117:/home/u910019/trade/night056/x-shfe/tools/
 	ssh -p 44163						u910019@101.231.3.117 'rm /home/u910019/trade/night056/x-shfe/tools/*.log'
@@ -66,8 +66,8 @@ function upload_files
 ###################
 	# 910229
 	scp -P 44163 ./lib/packaged/*.so	u910019@101.231.3.117:/home/u910019/myfund/night229/x-shfe/
-	scp -P 44163 ./lib/packaged/*.txt	u910019@101.231.3.117:/home/u910019/myfund/night229/x-shfe/
-	scp -P 44163 ./lib/packaged/*.txt	u910019@101.231.3.117:/home/u910019/myfund/night229/x-shfe/tools/
+	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/myfund/night229/x-shfe/
+	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/myfund/night229/x-shfe/tools/
 	scp -P 44163 ./229/*.csv			u910019@101.231.3.117:/home/u910019/myfund/night229/x-shfe/
 	scp -P 44163 ./229/*.csv			u910019@101.231.3.117:/home/u910019/myfund/night229/x-shfe/tools/
 	ssh -p 44163						u910019@101.231.3.117 'rm /home/u910019/myfund/night229/x-shfe/tools/*.log'
