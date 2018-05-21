@@ -6,7 +6,7 @@ function encrypt_so
 	for cur_so in `ls  ./lib/bare/`
 	do
 		echo "process ${cur_so}"
-	  tar -C ./lib/bare -cvzf ./lib/packaged/${cur_so} ${cur_so}
+		tar -czvf - -C ./lib/bare ${cur_so} | openssl des3 -salt -k 617999 -out ./lib/packaged/${cur_so}  
 	done
 
 }
