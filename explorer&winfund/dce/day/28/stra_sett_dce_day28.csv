@@ -1,9 +1,10 @@
 comm_no,strategy,contract,lot
-dlj,st306a_dlj_day,j1809,1
-dlj,st309a_dlj_day,j1809,1
+dlj,st307a_dlj_day,j1809,1
+dlj,st308a_dlj_day,j1809,1
 dlj,st310a_dlj_day,j1809,1
-dlj,st314a_dlj_day,j1809,1
-dljd,st306a_dljd_day,jd1809,1
-dljd,st309a_dljd_day,jd1809,1
-dljd,st310a_dljd_day,jd1809,1
-dljd,st311a_dljd_day,jd1809,1
+dljd,st314a_dljd_day,jd1809,1
+dlm,st306a_dlm_day,m1809,3
+dlm,st309a_dlm_day,m1809,3
+dlm,st310a_dlm_day,m1809,3
+dlm,st311a_dlm_day,m1809,3
+dlm,st314a_dlm_day,m1809,3

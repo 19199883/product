@@ -3,6 +3,7 @@ DAY_NIGHT=night
 
 function encrypt_so
 {
+	rm ./lib/packaged/*.so
 	for cur_so in `ls  ./lib/bare/`
 	do
 		echo "process ${cur_so}"
@@ -18,6 +19,7 @@ function upload_files
 # explore
 ###############
 	# 910028
+	ssh -p 44153							u910019@101.231.3.117 'rm /home/u910019/explorer/night28/x-dce/*night.so'
 	scp -P 44153 ./lib/packaged/*.so		u910019@101.231.3.117:/home/u910019/explorer/night28/x-dce/
 	scp -P 44153 ./ev/*.txt					u910019@101.231.3.117:/home/u910019/explorer/night28/x-dce/
 	scp -P 44153 ./ev/*.txt					u910019@101.231.3.117:/home/u910019/explorer/night28/x-dce/tools/
@@ -29,6 +31,7 @@ function upload_files
 	cat ./configurator.log
 
 	# 910100
+	ssh -p 44153							u910019@101.231.3.117 'rm /home/u910019/explorer/night100/x-dce/*night.so'
 	scp -P 44153 ./lib/packaged/*.so		u910019@101.231.3.117:/home/u910019/explorer/night100/x-dce/
 	scp -P 44153 ./ev/*.txt					u910019@101.231.3.117:/home/u910019/explorer/night100/x-dce/
 	scp -P 44153 ./ev/*.txt					u910019@101.231.3.117:/home/u910019/explorer/night100/x-dce/tools/
@@ -43,6 +46,7 @@ function upload_files
 # winfund
 ###################
 	# 910097
+	ssh -p 44153							u910019@101.231.3.117 'rm /home/u910019/winfund/night097/x-dce/*night.so'
 	scp -P 44153 ./lib/packaged/*.so		u910019@101.231.3.117:/home/u910019/winfund/night097/x-dce/
 	scp -P 44153 ./ev/*.txt					u910019@101.231.3.117:/home/u910019/winfund/night097/x-dce/
 	scp -P 44153 ./ev/*.txt					u910019@101.231.3.117:/home/u910019/winfund/night097/x-dce/tools/

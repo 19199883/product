@@ -3,6 +3,7 @@ DAY_NIGHT=night
 
 function encrypt_so
 {
+	rm ./lib/packaged/*.so
 	rm ./lib/packaged/*
 	for cur_so in `ls  ./lib/bare/`
 	do
@@ -18,6 +19,7 @@ function upload_files
 # explore
 ###############
 	# 910019
+	ssh -p 44163						u910019@101.231.3.117 'rm /home/u910019/trade/night_910019/x-shfe/*night.so'
 	scp -P 44163 ./lib/packaged/*.so	u910019@101.231.3.117:/home/u910019/trade/night_910019/x-shfe/
 	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/trade/night_910019/x-shfe/
 	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/trade/night_910019/x-shfe/tools/
@@ -29,6 +31,7 @@ function upload_files
 	cat ./configurator.log
 
 	# 910063
+	ssh -p 44163						u910019@101.231.3.117 'rm /home/u910019/trade/night_910063/x-shfe/*night.so'
 	scp -P 44163 ./lib/packaged/*.so	u910019@101.231.3.117:/home/u910019/trade/night_910063/x-shfe/
 	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/trade/night_910063/x-shfe/
 	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/trade/night_910063/x-shfe/tools/
@@ -40,6 +43,7 @@ function upload_files
 	cat ./configurator.log
 
 	# 910109
+	ssh -p 44163						u910019@101.231.3.117 'rm /home/u910019/trade/night109/x-shfe/*night.so'
 	scp -P 44163 ./lib/packaged/*.so	u910019@101.231.3.117:/home/u910019/trade/night109/x-shfe/
 	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/trade/night109/x-shfe/
 	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/trade/night109/x-shfe/tools/
@@ -51,6 +55,7 @@ function upload_files
 	cat ./configurator.log
 
 	# 910056
+	ssh -p 44163						u910019@101.231.3.117 'rm /home/u910019/trade/night056/x-shfe/*night.so'
 	scp -P 44163 ./lib/packaged/*.so	u910019@101.231.3.117:/home/u910019/trade/night056/x-shfe/
 	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/trade/night056/x-shfe/
 	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/trade/night056/x-shfe/tools/
@@ -65,6 +70,7 @@ function upload_files
 # winfund
 ###################
 	# 910229
+	ssh -p 44163						u910019@101.231.3.117 'rm /home/u910019/myfund/night229/x-shfe/*night.so'
 	scp -P 44163 ./lib/packaged/*.so	u910019@101.231.3.117:/home/u910019/myfund/night229/x-shfe/
 	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/myfund/night229/x-shfe/
 	scp -P 44163 ./ev/*.txt	u910019@101.231.3.117:/home/u910019/myfund/night229/x-shfe/tools/

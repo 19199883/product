@@ -3,6 +3,7 @@ DAY_NIGHT=day
 
 function encrypt_so
 {
+	rm ./lib/packaged/*.so
 	for cur_so in `ls  ./lib/bare/`
 	do
 		echo "process ${cur_so}"
@@ -18,6 +19,7 @@ function upload_files
 # explore
 ###############
 	# 910017
+	ssh -p 8012							u910019@123.149.20.60 'rm /home/u910019/trade/zce_day17/x-zce/*day.so'
 	scp -P 8012 ./lib/packaged/*.so		u910019@123.149.20.60:/home/u910019/trade/zce_day17/x-zce/
 	scp -P 8012 ./ev/*.txt				u910019@123.149.20.60:/home/u910019/trade/zce_day17/x-zce/
 	scp -P 8012 ./ev/*.txt				u910019@123.149.20.60:/home/u910019/trade/zce_day17/x-zce/tools/
@@ -33,15 +35,15 @@ function upload_files
 # winfund
 ###################
 	# 910101
-	scp -P 8012 ./lib/packaged/*.so		u910019@123.149.20.60:/home/u910019/winfund/day101/x-zce/
-	scp -P 8012 ./ev/*.txt				u910019@123.149.20.60:/home/u910019/winfund/day101/x-zce/
-	scp -P 8012 ./ev/*.txt				u910019@123.149.20.60:/home/u910019/winfund/day101/x-zce/tools/
-	scp -P 8012 ./101/*.csv				u910019@123.149.20.60:/home/u910019/winfund/day101/x-zce/
-	scp -P 8012 ./101/*.csv				u910019@123.149.20.60:/home/u910019/winfund/day101/x-zce/tools/
-	ssh -p 8012							u910019@123.149.20.60 'rm /home/u910019/winfund/day101/x-zce/tools/*.log'
-	ssh -p 8012							u910019@123.149.20.60 '/home/u910019/winfund/day101/x-zce/tools/configurator.py'
-	scp -P 8012							u910019@123.149.20.60:/home/u910019/winfund/day101/x-zce/tools/configurator.log ./
-	cat ./configurator.log
+#	scp -P 8012 ./lib/packaged/*.so		u910019@123.149.20.60:/home/u910019/winfund/day101/x-zce/
+#	scp -P 8012 ./ev/*.txt				u910019@123.149.20.60:/home/u910019/winfund/day101/x-zce/
+#	scp -P 8012 ./ev/*.txt				u910019@123.149.20.60:/home/u910019/winfund/day101/x-zce/tools/
+#	scp -P 8012 ./101/*.csv				u910019@123.149.20.60:/home/u910019/winfund/day101/x-zce/
+#	scp -P 8012 ./101/*.csv				u910019@123.149.20.60:/home/u910019/winfund/day101/x-zce/tools/
+#	ssh -p 8012							u910019@123.149.20.60 'rm /home/u910019/winfund/day101/x-zce/tools/*.log'
+#	ssh -p 8012							u910019@123.149.20.60 '/home/u910019/winfund/day101/x-zce/tools/configurator.py'
+#	scp -P 8012							u910019@123.149.20.60:/home/u910019/winfund/day101/x-zce/tools/configurator.log ./
+#	cat ./configurator.log
 }
 
 ###################
