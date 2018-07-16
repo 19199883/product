@@ -1,0 +1,9 @@
+comm_no,strategy,contract,lot
+dlm,st301a_dlm_day,m1809,2
+dljd,st301a_dljd_day,jd1809,1
+dlj,st301a_dlj_day,j1809,1
+dljd,st303a_dljd_day,jd1809,1
+dlj,st303a_dlj_day,j1809,1
+dlm,st304a_dlm_day,m1809,2
+dlj,st305a_dlj_day,j1809,1
+dla,st314a_dla_day,a1809,2
