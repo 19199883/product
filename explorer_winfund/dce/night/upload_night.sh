@@ -20,9 +20,9 @@ function upload_files
 ###############
 	# 910028
 	ssh -p 44153							u910019@101.231.3.117 'rm /home/u910019/explorer/night28/x-dce/*night.so'
-	scp -P 44153 ./lib/packaged/*.so		u910019@101.231.3.117:/home/u910019/explorer/night28/x-dce/
-	scp -P 44153 ./ev/*.txt					u910019@101.231.3.117:/home/u910019/explorer/night28/x-dce/
-	scp -P 44153 ./ev/*.txt					u910019@101.231.3.117:/home/u910019/explorer/night28/x-dce/tools/
+	scp -P 44153 ./lib/packaged/st*_night.so		u910019@101.231.3.117:/home/u910019/explorer/night28/x-dce/
+	scp -P 44153 ./ev/st.txt					u910019@101.231.3.117:/home/u910019/explorer/night28/x-dce/
+	scp -P 44153 ./ev/st.txt					u910019@101.231.3.117:/home/u910019/explorer/night28/x-dce/tools/
 	scp -P 44153 ./28/*.csv					u910019@101.231.3.117:/home/u910019/explorer/night28/x-dce/
 	scp -P 44153 ./28/*.csv					u910019@101.231.3.117:/home/u910019/explorer/night28/x-dce/tools/
 	ssh -p 44153							u910019@101.231.3.117 'rm /home/u910019/explorer/night28/x-dce/tools/*.log'
@@ -32,9 +32,9 @@ function upload_files
 
 	# 910100
 	ssh -p 44153							u910019@101.231.3.117 'rm /home/u910019/explorer/night100/x-dce/*night.so'
-	scp -P 44153 ./lib/packaged/*.so		u910019@101.231.3.117:/home/u910019/explorer/night100/x-dce/
-	scp -P 44153 ./ev/*.txt					u910019@101.231.3.117:/home/u910019/explorer/night100/x-dce/
-	scp -P 44153 ./ev/*.txt					u910019@101.231.3.117:/home/u910019/explorer/night100/x-dce/tools/
+	scp -P 44153 ./lib/packaged/st*_night.so		u910019@101.231.3.117:/home/u910019/explorer/night100/x-dce/
+	scp -P 44153 ./ev/st.txt					u910019@101.231.3.117:/home/u910019/explorer/night100/x-dce/
+	scp -P 44153 ./ev/st.txt					u910019@101.231.3.117:/home/u910019/explorer/night100/x-dce/tools/
 	scp -P 44153 ./100/*.csv				u910019@101.231.3.117:/home/u910019/explorer/night100/x-dce/
 	scp -P 44153 ./100/*.csv				u910019@101.231.3.117:/home/u910019/explorer/night100/x-dce/tools/
 	ssh -p 44153							u910019@101.231.3.117 'rm /home/u910019/explorer/night100/x-dce/tools/*.log'
