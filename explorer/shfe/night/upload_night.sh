@@ -59,6 +59,21 @@ function upload_files
 	scp -P 44163						u910019@101.231.3.117:/home/u910019/trade/night109/x-shfe/tools/configurator.log ./
 	cat ./configurator.log
 	echo "--------------explorer: end  proc 910109--------------"
+
+
+	# 910111
+	echo "--------------explorer: begin  proc 910111--------------"
+	ssh -p 44163						u910019@101.231.3.117 'rm /home/u910019/trade/night111/x-shfe/*night.so'
+	scp -P 44163 ./lib/packaged/st*_night.so	u910019@101.231.3.117:/home/u910019/trade/night111/x-shfe/
+	scp -P 44163 ./ev/st.txt	u910019@101.231.3.117:/home/u910019/trade/night111/x-shfe/
+	scp -P 44163 ./ev/st.txt	u910019@101.231.3.117:/home/u910019/trade/night111/x-shfe/tools/
+	scp -P 44163 ./111/*.csv			u910019@101.231.3.117:/home/u910019/trade/night111/x-shfe/
+	scp -P 44163 ./111/*.csv			u910019@101.231.3.117:/home/u910019/trade/night111/x-shfe/tools/
+	ssh -p 44163						u910019@101.231.3.117 'rm /home/u910019/trade/night111/x-shfe/tools/*.log'
+	ssh -p 44163						u910019@101.231.3.117 '/home/u910019/trade/night111/x-shfe/tools/configurator.py'
+	scp -P 44163						u910019@101.231.3.117:/home/u910019/trade/night111/x-shfe/tools/configurator.log ./
+	cat ./configurator.log
+	echo "--------------explorer: end  proc 910111--------------"
 }
 
 ###################
